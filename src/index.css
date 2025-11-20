@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+
+@theme {
+  --color-black: #0A0D14;
+}
+
+@utility .h1 { @apply text-3xl font-bold }
+@utility .h2 { @apply text-xl font-semibold }
+@utility .p  { @apply text-sm leading-6 }

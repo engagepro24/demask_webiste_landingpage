@@ -1,6 +1,9 @@
 import React from 'react'
 import DemaskLogo from "../assets/DemaskLogo.png"
 import HeroImage from "../assets/HeroImage.png"
+import blurimage1 from "../assets/blurimage1.svg"
+import blurimage2 from "../assets/blurimage2.svg"
+import blurimage3 from "../assets/blurimage3.svg"
 
 
 function IntroView() {
@@ -19,7 +22,7 @@ function IntroView() {
             </div>
             <div className="h-[500px] bg-black relative">
                 <div className='text-white fixed top-5 ' >
-                    <div className='flex justify-center w-screen items-center gap-[10%] ' >
+                    <div className='flex justify-center w-screen items-center gap-[10%] z-50 ' >
                         <div className='' >
                             <img className='h-20 w-30' src={DemaskLogo} alt="" />
 
@@ -57,8 +60,8 @@ function IntroView() {
                     <div className='flex justify-center  mt-5' >
                         <p class=" 
                        w-[80%] lg:w-[90%] xl:w-[80%] 2xl:w-[60%]
-                     text-lg md:text-2xl  lg:text-4xl 
-                        bg-gradient-to-b from-[#0A0D14]  to-[#FFFFFF] to-[40%] text-center leading-8 md:leading-12 font-bold bg-clip-text font-semibold tracking-[0.2em] text-transparent uppercase ">
+                   h1
+                        bg-gradient-to-b from-[#0A0D14]  to-[#FFFFFF] to-[40%] text-center leading-8 md:leading-12  bg-clip-text  tracking-[0.2em] text-transparent uppercase ">
                             Host Seamless Global Conferences  with De-Mask Virtual Platform</p>
                     </div>
 
@@ -74,7 +77,7 @@ function IntroView() {
 
             {/* Hero Image section */}
             <div className='relative w-screen bg-black min-h-screen  ' >
-                <div className='absolute -top-[10px] lg:-top-[30px]  z-50 ' >
+                <div className='absolute -top-[10px] lg:-top-[30px]  z-40 ' >
                     <div className='w-screen mx-auto  ' >
                         <div className='max-w-7xl mx-auto border  shadow-gray-800 shadow-2xl' >
                             <img src={HeroImage} alt="" />
@@ -82,8 +85,43 @@ function IntroView() {
                     </div>
                 </div>
 
+                <div
+                    className='
+                  -top-[25%]
+                  z-20
+    left-1/2
+              -translate-x-1/2 
+                  absolute  
+                '
+                >
+                    <img src={blurimage1} alt="" />
 
-                <div class="
+                </div>
+                <div
+                    className='
+                  -top-[25%]
+                  z-40
+    -left-10
+                  absolute  
+                '
+                >
+                    <img src={blurimage2} alt="" />
+
+                </div>
+                <div
+                    className='
+                  -top-[50%]
+                  z-20
+    -right-30
+                  absolute  
+                '
+                >
+                    <img src={blurimage2} alt="" />
+
+                </div>
+
+
+                {/* <div class="
                 z-20
     w-[403.32064880494727px]
     h-[402.82049560546875px]
@@ -98,7 +136,7 @@ function IntroView() {
     backdrop-blur-[10px]
     absolute
 ">
-                </div>
+                </div> */}
 
                 {/* <div class="
                 z-20

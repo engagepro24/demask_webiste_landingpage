@@ -40,6 +40,8 @@ function App() {
           </div>
         </div>
 
+
+
         <div className='max-w-7xl mx-auto mt-8' >
           <div className='flex flex-wrap gap-10 justify-center' >
             <img className='h-5 w-20' src={logo1} alt="" />
@@ -54,6 +56,8 @@ function App() {
           </div>
 
         </div>
+
+
       </div>
     </>
   )

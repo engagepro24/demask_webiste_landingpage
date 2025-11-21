@@ -21,7 +21,7 @@ function IntroView() {
                 </div>
             </div>
             <div className="h-[500px] bg-black relative">
-                <div className='text-white fixed top-5 ' >
+                <div className='text-white fixed top-5 z-50 ' >
                     <div className='flex justify-center w-screen items-center gap-[10%] z-50 ' >
                         <div className='' >
                             <img className='h-20 w-30' src={DemaskLogo} alt="" />
@@ -77,7 +77,7 @@ function IntroView() {
 
             {/* Hero Image section */}
             <div className='relative w-screen bg-black min-h-screen  ' >
-                <div className='absolute -top-[10px] lg:-top-[30px]  z-40 ' >
+                <div className='absolute -top-[10px] lg:-top-[30px]  z-30 ' >
                     <div className='w-screen mx-auto  ' >
                         <div className='max-w-7xl mx-auto border  shadow-gray-800 shadow-2xl' >
                             <img src={HeroImage} alt="" />
@@ -89,8 +89,8 @@ function IntroView() {
                     className='
                   -top-[25%]
                   z-20
-    left-1/2
-              -translate-x-1/2 
+                  left-1/2
+                 -translate-x-1/2 
                   absolute  
                 '
                 >
@@ -101,7 +101,7 @@ function IntroView() {
                     className='
                   -top-[25%]
                   z-40
-    -left-10
+                 -left-10
                   absolute  
                 '
                 >

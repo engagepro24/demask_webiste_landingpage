@@ -13,6 +13,7 @@ function TwoThreePhone() {
 
             <div className='border border-[#31353F] max-w-7xl mx-auto relative rounded-4xl overflow-hidden' >
 
+
                 <div className="grid grid-cols-1 md:grid-cols-2 p-10  " >
                     <div className="order-2 md:order-1 pt-5 md:pt-10 p-0 sm:p-10 relative  " >
                         <div

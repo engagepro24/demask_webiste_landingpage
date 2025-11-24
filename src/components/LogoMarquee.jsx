@@ -17,13 +17,13 @@ const logos3 = [sliderlogo7, sliderlogo8, sliderlogo9];
 
 export default function LogoMarquee() {
     return (
-        <article className="wrapper rotate-[130deg]">
+        <article className="wrapper rotate-130">
 
             {/* First marquee */}
             <div className="marquee">
-                <div className="marquee_group">
+                <div className="marquee_group ">
                     {[...logos1, ...logos1, ...logos1, ...logos1, ...logos1, ...logos1, ...logos1, ...logos1].map((logo, idx) => (
-                        <img key={idx} src={logo} alt={`logo-${idx}`} className="logo" />
+                        <img key={idx} src={logo} alt={`logo-${idx}`} className="logo " />
                     ))}
                 </div>
             </div>

@@ -15,7 +15,7 @@ function Beleive() {
         <div>
 
 
-            <div className='flex justify-center pt-10  ' >
+            <div className='flex justify-center pt-0  ' >
                 <div className='border border-[#BFA2F6]/50 p-2 bg-[#BFA2F6]/20 rounded-xl' >
                     <p class="bg-gradient-to-r from-[#A76BFF] to-[#C89BFF] bg-clip-text text-transparent 
        uppercase tracking-[0.3em] font-semibold 

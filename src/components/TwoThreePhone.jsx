@@ -6,7 +6,11 @@ import blurimage1 from "../assets/blurimage1.svg"
 import blurimage2 from "../assets/blurimage2.svg"
 
 import backgroundgreenblur from "../assets/backgroundgreenblur.svg"
+import { useNavigate } from 'react-router-dom'
 function TwoThreePhone() {
+
+    const navigate = useNavigate()
+
     return (
         <div className='bg-[#0A0D14] mt-4 md:mt-20 relative z-40'  >
             {/* <div className='bg-[#0A0D14] mt-16 md:mt-20 relative'  > */}
@@ -66,7 +70,7 @@ function TwoThreePhone() {
                         </div>
 
                         <div className='mt-6' >
-                            <div className='bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[120px] rounded-2xl text-center text-white' >
+                            <div onClick={() => navigate("/contact")} className=' cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[120px] rounded-2xl text-center text-white' >
                                 Get started
                             </div>
                         </div>
@@ -139,7 +143,7 @@ function TwoThreePhone() {
                         </div>
 
                         <div className='mt-6' >
-                            <div className='bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[120px] rounded-2xl text-center text-white' >
+                            <div onClick={() => navigate("/contact")} className=' cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[120px] rounded-2xl text-center text-white' >
                                 Get started
                             </div>
                         </div>

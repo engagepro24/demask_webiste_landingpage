@@ -113,10 +113,10 @@ function Faq() {
 
                                 <button
                                     onClick={() => toggleFAQ(index)}
-                                    className="w-full flex justify-between items-center px-5 py-4 text-left text-white bg-[#20232D] hover:bg-[#1b1e25] transition"
+                                    className="w-full cursor-pointer flex justify-between items-center px-5 py-4 text-left text-white bg-[#20232D] hover:bg-[#1b1e25] transition"
                                 >
 
-                                    <span className={`${openIndex === index ? "text-[#BC89FF]" : "text-white"} h5 font-medium`}>
+                                    <span className={`${openIndex === index ? "text-[#BC89FF]" : "text-white"} h5 font-medium `}>
                                         {item.question}
                                     </span>
 

@@ -169,7 +169,7 @@ function IntroView() {
                 </div>
             </div>
             <div className='absolute top-0 right-0 z-20 ' >
-                <div className="h-[500px] bg-black/80 relative">
+                <div className="h-[500px] bg-black/80 relative z-20">
 
 
                     <div className='pt-40 text-white ' >
@@ -190,10 +190,25 @@ function IntroView() {
                         </div>
 
                         <div className='flex justify-center  w-screen mt-4' >
-                            <div className='bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] p-2 w-[150px] rounded-md text-center text-white' >
+                            <div onClick={() => navigate("/contact")} className='z-50 cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] p-2 w-[150px] rounded-md text-center text-white' >
                                 Get started
                             </div>
                         </div>
+
+                    </div>
+
+                    <div
+                        className='
+                    top-[70%]
+                    sm:top-[60%]
+                  md:top-[60%]
+                  z-20
+                  left-1/2
+                 -translate-x-1/2 
+                  absolute  
+                '
+                    >
+                        <img src={blurimage1} alt="" />
 
                     </div>
 
@@ -201,8 +216,8 @@ function IntroView() {
             </div>
 
             {/* Hero Image section */}
-            <div className='relative w-screen bg-black h-[50px] md:h-[250px] md:min-h-screen  ' >
-                <div className='absolute -top-[50px] md:-top-[10px] lg:-top-[30px]  z-30 ' >
+            <div className='relative w-screen bg-black min-h-[50px] sm:h-[360px] md:h-[560px] lg:min-h-[680px] xl:min-h-screen  ' >
+                <div className='absolute -top-[50px]  sm:-top-[80px] md:-top-[60px] lg:-top-[30px]  z-30 ' >
                     <div className='w-screen mx-auto  ' >
                         <div className='max-w-7xl mx-auto border  shadow-gray-800 shadow-2xl' >
                             <img src={HeroImage} alt="" />
@@ -210,19 +225,7 @@ function IntroView() {
                     </div>
                 </div>
 
-                <div
-                    className='
-                    -top-[300%]
-                  md:-top-[25%]
-                  z-20
-                  left-1/2
-                 -translate-x-1/2 
-                  absolute  
-                '
-                >
-                    <img src={blurimage1} alt="" />
 
-                </div>
                 <div
                     className='
                   -top-[25%]

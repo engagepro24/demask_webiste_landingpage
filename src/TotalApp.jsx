@@ -35,7 +35,7 @@ function TotalApp() {
                 <div id="home">
                     <IntroView />
                 </div>
-                <div id="about" className='scroll-mt-40 mt-0 md:mt-20' >
+                <div id="about" className='scroll-mt-40 mt-10 md:mt-0 lg:mt-0 xl:mt-20' >
                     <Beleive />
                 </div>
 

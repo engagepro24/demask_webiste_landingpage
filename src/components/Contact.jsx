@@ -8,6 +8,7 @@ import tickimage from "../assets/tickimage.png"
 import instaimage from "../assets/instaimage.png"
 import linkimage from "../assets/linkimage.png"
 import ximage from "../assets/ximage.png"
+import { HiOutlineMail } from "react-icons/hi";
 
 function Contact({ pageData }) {
     return (
@@ -120,7 +121,8 @@ function Contact({ pageData }) {
                 {/* Box 1 - Email */}
                 <div className="bg-[#1A1D24] border border-white/10 rounded-xl p-6 flex flex-col gap-5">
                     <div class="bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.1)_100%)] h-12 w-12 rounded-lg flex justify-center items-center">
-                        <img className="h-7 w-7" src={groupimage} alt="" />
+
+                        <HiOutlineMail size={30} />
                     </div>
                     <div>
                         <p className="text-white text-sm">Email us</p>

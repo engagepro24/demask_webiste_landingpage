@@ -40,7 +40,7 @@ function SidePhone() {
 
 
                 <div className='grid grid-cols-12 gap-5 mt-5' >
-                    <div className='col-span-12 relative md:col-span-8 h-10 bg-gradient-to-br overflow-hidden from-[#31353F] to-[#0A0D14] h-[250px] md:h-[450px]  rounded-2xl
+                    <div className='col-span-12 relative md:col-span-8 h-10 bg-gradient-to-br overflow-hidden from-[#31353F] to-[#0A0D14] h-[250px] md:h-[400px]  rounded-2xl
                   ' >
                         <div  >
                             <div className=' pt-8 px-6 ' >
@@ -64,19 +64,19 @@ function SidePhone() {
 
 
                         <div className="absolute bottom-0 left-[30%] z-30">
-                            <img className="h-30 md:h-80" src={keyimage} alt="" />
+                            <img className="h-30 md:h-70" src={keyimage} alt="" />
                         </div>
 
                         <div className="absolute bottom-0 left-[5%] z-20">
-                            <img className="h-30 md:h-80" src={keyimage2} alt="" />
+                            <img className="h-30 md:h-70" src={keyimage2} alt="" />
                         </div>
 
                         <div className="absolute bottom-0 right-[0%] z-40">
-                            <img className="h-30 md:h-80" src={keyimage3} alt="" />
+                            <img className="h-30 md:h-70" src={keyimage3} alt="" />
                         </div>
 
                     </div>
-                    <div className='col-span-12 md:col-span-4 h-10 h-[450px]   ' >
+                    <div className='col-span-12 md:col-span-4 h-10 h-[400px]   ' >
                         <div className=' h-full flex flex-col gap-5 ' >
                             <div className='h-[60%]  bg-gradient-to-br from-[#31353F] to-[#0A0D14] rounded-2xl' >
                                 <div className='h5 h-full flex flex-col justify-end p-8' >
@@ -104,7 +104,7 @@ function SidePhone() {
                     </div>
 
                     <div className='col-span-12 md:col-span-4 h-10  bg-gradient-to-br from-[#31353F] to-[#0A0D14] rounded-2xl h-[400px]' >
-                        <div className='h-[450px] relative '>
+                        <div className='h-[400px] relative '>
                             <div className='absolute bottom-0' >
                                 <img src={worldImage} alt="" />
                             </div>

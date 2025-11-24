@@ -239,7 +239,7 @@ function PriceTable() {
 
                                             {/* BUTTON */}
                                             <div className="pb-5 mt-10">
-                                                <div className={`${plan?.design == "change" ? "bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] text-center text-white" : " bg-black text-white border rounded-2xl border-gray-500 "} mx-auto w-[90%] rounded-md py-2 text-center  cursor-pointer  transition`}>
+                                                <div className={`${plan?.design == "change" ? "bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] text-center text-white" : " bg-black text-white border rounded-2xl border-gray-500 "} mx-auto w-[90%] rounded-xl py-2 text-center  cursor-pointer  transition`}>
                                                     {plan.button}
                                                 </div>
                                             </div>

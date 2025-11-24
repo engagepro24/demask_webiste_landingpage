@@ -12,7 +12,7 @@ import logo7 from "../assets/logo7.png";
 import logo8 from "../assets/logo8.png";
 
 const Test = () => {
-    const items = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8];
+    const items = [logo2, logo3, logo4, logo2, logo3, logo4, logo2, logo3, logo4, logo2, logo3, logo4, logo2, logo3, logo4, logo2, logo3, logo4];
 
     const responsive = {
         desktop: { breakpoint: { max: 3000, min: 1024 }, items: 6 },

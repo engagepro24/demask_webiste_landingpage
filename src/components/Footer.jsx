@@ -40,7 +40,7 @@ function Footer({ pageData }) {
 
 
     return (
-        <div className="w-full bg-black text-white px-4">
+        <div className="w-full bg-black text-white px-4 pt-10 md:pt-20">
 
             {/* TOP SECTION */}
             <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-[10%] py-6">

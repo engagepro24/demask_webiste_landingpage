@@ -12,7 +12,7 @@ import HalfhiddenCarosel from './HalfhiddenCarosel';
 function Elevate({ pageData }) {
     return (
         <div>
-            <div className={`${pageData ? "mt-0" : "mt-10"} w-[90%] md:max-w-7xl mx-auto`}>
+            <div className={`${pageData ? "mt-0" : "mt-10"}  mx-auto`}>
 
                 {/* Top Button */}
                 <div className="flex justify-center">
@@ -47,7 +47,7 @@ function Elevate({ pageData }) {
                         Download Our App
                     </div>
                 </div>
-                <div>
+                <div className='relative' >
                     <HalfhiddenCarosel />
                 </div>
                 {/* <div className="grid grid-cols-5 gap-5 mt-10">

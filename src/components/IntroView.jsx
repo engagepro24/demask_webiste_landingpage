@@ -117,7 +117,7 @@ function IntroView() {
 
                     {/* CONTACT BUTTON */}
                     <div className='flex justify-center mt-10'>
-                        <div className='bg-white h-8 px-4 flex justify-center items-center rounded-lg text-black text-lg font-semibold'>
+                        <div onClick={() => navigate("/contact")} className='bg-white h-8 px-4 flex justify-center items-center rounded-lg text-black text-lg font-semibold'>
                             Contact us
                         </div>
                     </div>

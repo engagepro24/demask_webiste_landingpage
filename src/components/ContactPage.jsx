@@ -20,15 +20,25 @@ function ContactPage() {
     };
 
 
+    const menu = [
+        { title: "Home", section: "home" },
+        { title: "About Us", section: "about" },
+        { title: "Features", section: "features" },
+        { title: "Pricing", section: "pricing" },
+        { title: "Downloads", section: "download" }
+    ];
+
+
     const [open, setOpen] = useState(false)
 
     const [active, setActive] = useState("Home");
 
-    const menu = ["Home", "Services", "Contact", "About"];
+    // const menu = ["Home", "Services", "Contact", "About"];
 
 
     return (
         <div className='bg-[#0A0D14] h-auto min-h-full overflow-x-hidden' >
+
             <div className='min-h-screen h-full'  >
                 <div className="w-full z-10 relative">
                     <div className="grid h-[500px] grid-cols-10 gap-2">
@@ -42,7 +52,7 @@ function ContactPage() {
                     <div className=' absolute top-0 w-screen ' >
                         <div className="min-h-[500px] bg-black/80  ">
 
-                            <div className='pt-40 text-white  ' >
+                            <div className='pt-10 md:pt-40 text-white  ' >
 
 
                                 <div className='' >
@@ -127,26 +137,40 @@ function ContactPage() {
 
                     {/* MENU ITEMS */}
                     <div className="px-5 py-5 space-y-4">
-                        {menu.map((item) => (
-                            <p
-                                key={item}
-                                onClick={() => setActive(item)}
-                                className={`text-lg cursor-pointer px-3 py-2 rounded-lg transition 
-                                ${active === item
-                                        ? "bg-white text-black font-semibold"
-                                        : "text-gray-300 hover:bg-gray-700"
-                                    }`}
-                            >
-                                {item}
-                            </p>
-                        ))}
+                        <div className="px-5 py-5 space-y-4">
+                            {menu.map((item) => (
+                                <p
+                                    key={item.title}
+                                    onClick={() => {
+                                        setActive(item.title);
+                                        goToHomeSection(item.section);
+                                        setOpen(false); // close sidebar
+                                    }}
+                                    className={`text-lg cursor-pointer px-3 py-2 rounded-lg transition  cursor-pointer
+        ${active === item.title
+                                            ? "bg-white text-black font-semibold"
+                                            : "text-gray-300 hover:bg-gray-700"
+                                        }`}
+                                >
+                                    {item.title}
+                                </p>
+                            ))}
+
+
+                            {/* CONTACT BUTTON */}
+                            <div className='flex justify-center mt-10'>
+                                <div className='bg-white h-8 px-4 flex justify-center items-center rounded-lg text-black text-lg font-semibold'>
+                                    Contact us
+                                </div>
+                            </div>
+                        </div>
 
                         {/* CONTACT BUTTON */}
-                        <div className='flex justify-center mt-10'>
+                        {/* <div className='flex justify-center mt-10'>
                             <div className='bg-white h-8 px-4 flex justify-center items-center rounded-lg text-black text-lg font-semibold'>
                                 Contact us
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -161,11 +185,11 @@ function ContactPage() {
 
                         </div>
                         <div className='bg-[#000000] flex justify-between lg:w-[500px] xl:w-[600px] z-50 px-10 py-2 rounded-full text-lg font-medium' >
-                            <p onClick={() => goToHomeSection("home")}>Home</p>
-                            <p onClick={() => goToHomeSection("about")}>About Us</p>
-                            <p onClick={() => goToHomeSection("features")}>Features</p>
-                            <p onClick={() => goToHomeSection("pricing")}>Pricing</p>
-                            <p onClick={() => goToHomeSection("download")}>Download</p>
+                            <p className='cursor-pointer' onClick={() => goToHomeSection("home")}>Home</p>
+                            <p className='cursor-pointer' onClick={() => goToHomeSection("about")}>About Us</p>
+                            <p className='cursor-pointer' onClick={() => goToHomeSection("features")}>Features</p>
+                            <p className='cursor-pointer' onClick={() => goToHomeSection("pricing")}>Pricing</p>
+                            <p className='cursor-pointer' onClick={() => goToHomeSection("download")}>Download</p>
 
 
                         </div>

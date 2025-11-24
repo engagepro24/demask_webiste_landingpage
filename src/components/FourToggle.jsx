@@ -67,35 +67,39 @@ function FourToggle() {
                 {/* TAB SECTION */}
                 <div className="mt-10 z-20">
                     <div className="mt-10">
-                        <div className="bg-[#20232D] rounded-2xl p-2 w-[90%] md:w-[730px] mx-auto relative overflow-hidden">
+                        <div className="w-[90%] md:w-[730px] mx-auto bg-[#20232D] rounded-2xl p-2 relative overflow-hidden">
 
-                            {/* Sliding Background */}
+                            {/* DESKTOP SLIDING BACKGROUND */}
                             <div
-                                className="absolute top-2 bottom-2 w-[24%] rounded-xl bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] transition-all duration-300"
+                                className="hidden md:block absolute top-2 bottom-2 rounded-xl bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] transition-all duration-300"
                                 style={{
-                                    left:
-                                        active === tabs[0] ? "1.5%" :
-                                            active === tabs[1] ? "26%" :
-                                                active === tabs[2] ? "50.5%" :
-                                                    "75%",
+                                    width: `${100 / tabs.length}%`,
+                                    left: `${(100 / tabs.length) * tabs.indexOf(active)}%`,
                                 }}
                             ></div>
 
-                            {/* Tabs */}
-                            <div className="grid grid-cols-4 text-white relative z-10">
+                            {/* TABS */}
+                            <div className="grid grid-cols-2 md:grid-cols-4 text-white relative z-10 gap-2 md:gap-0">
+
                                 {tabs.map((tab) => (
                                     <div
                                         key={tab}
                                         onClick={() => setActive(tab)}
-                                        className={`py-3 text-center cursor-pointer transition-all duration-300
-            ${active === tab ? "text-white" : "text-gray-300"}
-          `}
+                                        className={`
+          py-3 text-center cursor-pointer transition-all duration-300 rounded-xl
+          ${active === tab
+                                                ? ""
+                                                : "text-gray-300"}
+        `}
                                     >
                                         {tab}
                                     </div>
                                 ))}
+
                             </div>
                         </div>
+
+
                     </div>
 
                 </div>

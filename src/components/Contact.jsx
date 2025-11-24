@@ -3,7 +3,7 @@ import React from "react";
 
 import locationicon from "../assets/locationicon.png"
 import phoneimage from "../assets/image.png"
-import groupimage from "../assets/group.png"
+import groupimage from "../assets/Group.png"
 import tickimage from "../assets/tickimage.png"
 import instaimage from "../assets/instaimage.png"
 import linkimage from "../assets/linkimage.png"

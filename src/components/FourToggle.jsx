@@ -115,7 +115,7 @@ function FourToggle() {
                                         className={`
           py-3 text-center cursor-pointer transition-all duration-300 rounded-xl
           ${active === tab
-                                                ? "bg-gradient-to-r from-[#A76BFF] to-[#C89BFF]"
+                                                ? "bg-gradient-to-r from-[#A76BFF] to-[#C89BFF] md:bg-none"
                                                 : "text-gray-300"}
         `}
                                     >

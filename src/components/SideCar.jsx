@@ -15,9 +15,9 @@ function SideCar() {
         <div className='bg-[#0A0D14] mt-16 md:mt-20 '  >
 
             {/* <div className='border border-[#31353F] ' > */}
-            <div class="bg-[linear-gradient(102.5deg,#31353F_0%,#0A0D14_100%)] p-6 max-w-7xl mx-auto relative rounded-3xl min-h-[250px]">
-                <div className="grid grid-cols-1 md:grid-cols-2  " >
-                    <div className="order-2 md:order-1 pt-5 md:pt-10 p-0 sm:p-10 relative z-20 " >
+            <div class="bg-[linear-gradient(102.5deg,#31353F_0%,#0A0D14_100%)] p-6 max-w-7xl mx-auto relative rounded-3xl min-h-[250px] relative   overflow-hidden">
+                <div className="grid grid-cols-1 md:grid-cols-2 " >
+                    <div className="order-2 md:order-1 pt-5 md:pt-10 p-0 sm:p-10 z-20 " >
                         <div
                             className='
                               -top-[35%]
@@ -52,8 +52,10 @@ function SideCar() {
 
 
                     </div>
-                    <div className='order-2'  >
-                        <LogoMarquee />
+                    <div className='order-2    '  >
+                        <div className='absolute top-0 left-[30%]' >
+                            <LogoMarquee />
+                        </div>
                     </div>
                     {/* <div className="order-1 md:order-2">
                         <img className='h-[300px] w-full' src={phonefrontback} alt="" />

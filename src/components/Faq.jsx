@@ -116,18 +116,28 @@ function Faq() {
                                     className="w-full flex justify-between items-center px-5 py-4 text-left text-white bg-[#20232D] hover:bg-[#1b1e25] transition"
                                 >
 
-                                    <span className={`${openIndex === index ? "text-[#BC89FF]" : "text-white"} text-lg font-medium`}>{item.question}</span>
+                                    <span className={`${openIndex === index ? "text-[#BC89FF]" : "text-white"} text-lg font-medium`}>
+                                        {item.question}
+                                    </span>
 
-                                    <span className="text-xl text-gray-300">
-                                        {openIndex === index ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                                    <span className="text-xl text-gray-300 transition-transform duration-300"
+                                        style={{ transform: openIndex === index ? "rotate(180deg)" : "rotate(0deg)" }}>
+                                        <IoIosArrowUp />
                                     </span>
                                 </button>
 
-                                {openIndex === index && (
+                                {/* Animated Answer */}
+                                <div
+                                    className={`
+        overflow-hidden transition-all duration-500 ease-in-out
+        ${openIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
+      `}
+                                >
                                     <div className="px-5 py-4 text-white bg-[#20232D] border-t border-[#31353F]">
                                         {item.answer}
                                     </div>
-                                )}
+                                </div>
+
                             </div>
                         ))}
 

@@ -17,7 +17,7 @@ const logos3 = [logo1, logo1, logo1];
 
 export default function LogoMarquee() {
     return (
-        <article className="wrapper rotate-[320deg]">
+        <article className="wrapper rotate-[130deg]">
 
             {/* First marquee */}
             <div className="marquee">

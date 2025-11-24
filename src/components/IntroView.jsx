@@ -134,14 +134,29 @@ function IntroView() {
                         <img className='h-20 w-30' src={DemaskLogo} alt="" />
 
                     </div>
-                    <div className='bg-[#000000] flex justify-between lg:w-[500px] xl:w-[600px] z-50 px-10 py-2 rounded-full text-lg font-medium' >
-                        <div className='cursor-pointer' onClick={() => MovetoSection("home")} >Home</div>
-                        <div className='cursor-pointer' onClick={() => MovetoSection("about")} >About Us</div>
-                        <div className='cursor-pointer' onClick={() => MovetoSection("features")}>Features</div>
-                        <div className='cursor-pointer' onClick={() => MovetoSection("pricing")}  >Pricing</div>
-                        <div className='cursor-pointer' onClick={() => MovetoSection("download")} >Downlaods</div>
+                    <div className="bg-[#000000] flex justify-between lg:w-[500px] xl:w-[600px] z-50 px-10 py-2 rounded-full text-lg font-medium">
+
+                        {menu.map((item) => (
+                            <div
+                                key={item.section}
+                                onClick={() => {
+                                    setActive(item.section);
+                                    MovetoSection(item.section);
+                                }}
+                                className={
+                                    `cursor-pointer transition 
+         ${active === item.section
+                                        ? "text-white/80 "
+                                        // ? "text-white font-semibold underline underline-offset-4"
+                                        : "text-text-white hover:text-white"}`
+                                }
+                            >
+                                {item.title}
+                            </div>
+                        ))}
 
                     </div>
+
                     <div className='' >
                         <div onClick={() => navigate("/contact")} className=' cursor-pointer  bg-white h-12 w-35 flex justify-center items-center rounded-full text-black text-lg font-bold' >
                             Contact us
@@ -293,7 +308,7 @@ function IntroView() {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 

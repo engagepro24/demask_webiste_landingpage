@@ -49,6 +49,12 @@ function Elevate({ pageData }) {
                 </div>
                 <div className='relative' >
                     <HalfhiddenCarosel />
+                    <div className='h-100 w-[5%]  bg-black absolute top-0 left-0 ' >  </div>
+                    <div className='h-100 w-[10%]  bg-black absolute top-0 left-0 blur-xl' >  </div>
+                    <div className='h-100 w-[5%]  bg-black absolute top-0 right-0 ' >  </div>
+                    <div className='h-100 w-[10%]  bg-black absolute top-0 right-0 blur-xl' >  </div>
+                    <div className='h-0 w-screen  bg-black absolute bottom-0 right-0 ' >  </div>
+                    <div className='h-10 md:h-20 w-screen  bg-black absolute -bottom-10 right-0 blur-xl ' >  </div>
                 </div>
                 {/* <div className="grid grid-cols-5 gap-5 mt-10">
                     <img src={end1} alt="" className="w-auto h-auto" />

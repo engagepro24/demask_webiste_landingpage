@@ -43,9 +43,25 @@ function Elevate({ pageData }) {
                 </div>
                 <div className='flex justify-center items-center mt-5' >
 
-                    <div className='bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[180px] rounded-2xl text-center text-white' >
+                    <div
+                        className="
+    py-3 w-[180px] rounded-2xl text-center text-white
+    bg-[radial-gradient(36%_112.5%_at_50%_3.9%,#C29EFF_0%,#8126FF_100%)]
+
+    shadow-[0px_10px_14px_-2.25px_#0000003E,
+            0px_2.29px_3.2px_-1.5px_#00000035,
+            0px_0.6px_0.84px_-0.75px_#00000033,
+            0px_10px_18px_-3.75px_#EA2EFF40,
+            0px_2.29px_4.12px_-2.5px_#EA2EFFA2,
+            0px_0.6px_1.08px_-1.25px_#EA2EFFB8,
+            0px_0px_11px_0px_#FFFFFF_inset,
+            0_0_10px_2px_#ffffff80]   /* <<< this creates glowing border */
+  "
+                    >
                         Download Our App
                     </div>
+
+
                 </div>
                 <div className='relative' >
                     <HalfhiddenCarosel />

@@ -8,12 +8,13 @@ import blurimage2 from "../assets/blurimage2.svg"
 import backgroundgreenblur from "../assets/backgroundgreenblur.svg"
 function TwoThreePhone() {
     return (
-        <div className='bg-[#0A0D14] mt-16 md:mt-20 relative'  >
+        <div className='bg-[#0A0D14] mt-4 md:mt-20 relative z-40'  >
+            {/* <div className='bg-[#0A0D14] mt-16 md:mt-20 relative'  > */}
 
-            <div className='border border-[#31353F] max-w-7xl mx-auto relative' >
+            <div className='border border-[#31353F] max-w-7xl mx-auto relative rounded-4xl overflow-hidden' >
 
                 <div className="grid grid-cols-1 md:grid-cols-2 p-10  " >
-                    <div className="order-2 md:order-1 pt-5 md:pt-10 p-0 sm:p-10 relative z-20 " >
+                    <div className="order-2 md:order-1 pt-5 md:pt-10 p-0 sm:p-10 relative  " >
                         <div
                             className='
                            hidden  lg:block
@@ -23,7 +24,7 @@ function TwoThreePhone() {
                               absolute  
                             '
                         >
-                            <img className='h-100 w-100' src={backgroundgreenblur} alt="" />
+                            <img className='h-100 w-100  z-10' src={backgroundgreenblur} alt="" />
 
                         </div>
                         <div className='flex relative ' >

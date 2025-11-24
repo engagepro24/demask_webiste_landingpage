@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Manrope", sans-serif;
+  src: url("./fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  font-family: "Manrope", sans-serif;
+}
 
 @theme {
   --color-black: #0A0D14;
@@ -11,7 +18,7 @@
 @layer base {
   /* Heading 1 */
   h1, .h1 {
-    @apply   text-lg md:text-2xl  lg:text-4xl  font-bold;
+    @apply   text-lg md:text-2xl  lg:text-4xl xl:text-[45px]  font-normal;
   }
 
   /* Heading 2 */
@@ -264,4 +271,19 @@
     100% {
         transform: translateX(50%);
     }
+}
+
+
+.carousel-track-reverse .react-multi-carousel-track {
+  transform: translateX(0) scaleX(-1);
+}
+
+.carousel-track-reverse .react-multi-carousel-item {
+  transform: scaleX(-1);
+}
+
+/* Reverse the movement */
+.reverse-carousel .react-multi-carousel-track {
+  display: flex;
+  flex-direction: row-reverse;  /* 👈 THIS IS THE REAL FIX */
 }

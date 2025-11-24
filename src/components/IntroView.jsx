@@ -184,7 +184,7 @@ function IntroView() {
                         </div>
                         <div className='flex justify-center  mt-5' >
                             <p class=" 
-                       w-[80%] lg:w-[90%] xl:w-[80%] 2xl:w-[60%]   h1  bg-gradient-to-b from-[#0A0D14]  to-[#FFFFFF] to-[40%] text-center leading-8 md:leading-12  bg-clip-text  tracking-[0.2em] text-transparent uppercase
+                       w-[80%] lg:w-[90%] xl:w-[80%] 2xl:w-[70%]   h1  bg-gradient-to-b from-[#0A0D14]  to-[#FFFFFF] to-[40%] text-center leading-8 md:leading-12  bg-clip-text  tracking-[0.2em] text-transparent uppercase
                         ">
                                 Host Seamless Global Conferences  with De-Mask Virtual Platform</p>
                         </div>
@@ -201,7 +201,7 @@ function IntroView() {
             </div>
 
             {/* Hero Image section */}
-            <div className='relative w-screen bg-black h-[250px] md:min-h-screen  ' >
+            <div className='relative w-screen bg-black h-[50px] md:h-[250px] md:min-h-screen  ' >
                 <div className='absolute -top-[50px] md:-top-[10px] lg:-top-[30px]  z-30 ' >
                     <div className='w-screen mx-auto  ' >
                         <div className='max-w-7xl mx-auto border  shadow-gray-800 shadow-2xl' >
@@ -212,7 +212,7 @@ function IntroView() {
 
                 <div
                     className='
-                    -top-[50%]
+                    -top-[300%]
                   md:-top-[25%]
                   z-20
                   left-1/2

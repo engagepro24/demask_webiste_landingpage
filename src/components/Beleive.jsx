@@ -32,8 +32,13 @@ function Beleive() {
                 </div>
             </div>
 
-            <div className='w-[90%] md:max-w-7xl mx-auto mt-5' >
+            <div className='w-[90%] md:max-w-7xl mx-auto mt-5 relative' >
                 <Test />
+                {/* <div className='h-30 w-10 absolute bg-black top-0' ></div> */}
+                <div className='h-25 w-[2%]  bg-black absolute top-0 left-0 ' >  </div>
+                <div className='h-25 w-[8%]  bg-black absolute top-0 left-0 blur-lg' >  </div>
+                <div className='h-25 w-[2%]  bg-black absolute top-0 right-0 ' >  </div>
+                <div className='h-25 w-[8%]  bg-black absolute top-0 right-0 blur-lg' >  </div>
             </div>
 
             {/* <div className=" w-full">

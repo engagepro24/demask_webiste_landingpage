@@ -80,6 +80,7 @@ const TestmonialCar = () => {
                     ))}
                 </Carousel>
                 <Carousel
+
                     responsive={responsive}
                     infinite={true}
 
@@ -100,23 +101,24 @@ const TestmonialCar = () => {
                     removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
 
                     // 👇 No gaps, no margins
-                    containerClass="p-0 m-0"
+                    // containerClass="p-0 m-0"
+                    containerClass="reverse-carousel"
                     sliderClass="p-0 m-0"
                     itemClass="p-0 m-0"
                     rtl={true}
                 >
                     {items.map((item, index) => (
-                        <div className="flex flex-col" >
+                        <div className="flex flex-col-reverse" >
 
 
                             <div class=" ml-[60%] mt-10 bg-[radial-gradient(84%_29.47%_at_0%_0%,#2D303C_0%,#121317_100%)] p-6 rounded-xl w-[250px] min-h-[180px]">
-                                <div className='h6 text-[#868796]' >
+                                <div className='h6 text-[#868796] text-left' >
                                     Effortless image creation with
                                     stunning results. Highly
                                     recommend this app to bring
                                     their creative ideas to life.
                                 </div>
-                                <div className='flex items-center mt-4 gap-3' >
+                                <div className='flex flex-row-reverse items-center mt-4 gap-3' >
                                     <div>
                                         <img className='h-10 w-10 rounded-full' src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg" alt="" />
                                     </div>

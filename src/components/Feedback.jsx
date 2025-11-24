@@ -74,8 +74,16 @@ function Feedback() {
                         Hear from our global community and discover how De-mask has elevated their virtual meeting and conference experiences.
                     </div>
                 </div>
-                <div className='h-120 md:h-150 z-10' >
-                    <TestmonialCar />
+                <div className='h-120 md:h-150 z-10 ' >
+                    <div className=' h-full' >
+
+                        <TestmonialCar />
+                        <div className='h-full w-[1%] bg-[linear-gradient(180deg,#31353F_0%,#0A0D14_112.34%)] absolute top-0 left-0 ' >  </div>
+                        <div className='h-full w-[4%] bg-[linear-gradient(180deg,#31353F_0%,#0A0D14_112.34%)] absolute top-0 left-0 blur-lg' >  </div>
+                        <div className='h-full w-[1%] bg-[linear-gradient(180deg,#31353F_0%,#0A0D14_112.34%)] absolute top-0 right-0 ' >  </div>
+                        <div className='h-full w-[4%] bg-[linear-gradient(180deg,#31353F_0%,#0A0D14_112.34%)] absolute top-0 right-0 blur-lg' >  </div>
+
+                    </div>
                 </div>
 
             </div>

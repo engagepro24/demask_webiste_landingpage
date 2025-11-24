@@ -116,7 +116,7 @@ function Faq() {
                                     className="w-full flex justify-between items-center px-5 py-4 text-left text-white bg-[#20232D] hover:bg-[#1b1e25] transition"
                                 >
 
-                                    <span className={`${openIndex === index ? "text-[#BC89FF]" : "text-white"} text-lg font-medium`}>
+                                    <span className={`${openIndex === index ? "text-[#BC89FF]" : "text-white"} h5 font-medium`}>
                                         {item.question}
                                     </span>
 
@@ -133,7 +133,7 @@ function Faq() {
         ${openIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
       `}
                                 >
-                                    <div className="px-5 py-4 text-white bg-[#20232D] border-t border-[#31353F]">
+                                    <div className="px-5 py-4 text-white bg-[#20232D] border-t border-[#31353F] h5  ">
                                         {item.answer}
                                     </div>
                                 </div>

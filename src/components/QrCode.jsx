@@ -1,6 +1,6 @@
 import React from "react";
 import Qrcode from "../assets/Qrcode.png";
-import phone from "../assets/phone.png";
+import phone from "../components/phone.png";
 import apple from "../assets/apple.png";
 import playstore from "../assets/playstore.png";
 

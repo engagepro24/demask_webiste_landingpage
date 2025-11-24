@@ -1,7 +1,7 @@
 import React from "react";
 // import { FiMail, FiPhoneCall, FiMapPin } from "react-icons/fi";
 
-import locationicon from "../assets/icon.png"
+import locationicon from "../assets/locationicon.png"
 import phoneimage from "../assets/image.png"
 import groupimage from "../assets/group.png"
 import tickimage from "../assets/tickimage.png"

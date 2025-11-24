@@ -1,19 +1,19 @@
 import React from "react";
-import logo1 from '../assets/logo1.png'
 // import logo1 from '../assets/logo1.png'
-// import sliderlogo2 from '../assets/sliderlogo2.png'
-// import sliderlogo3 from '../assets/sliderlogo3.png'
-// import sliderlogo4 from '../assets/sliderlogo4.png'
-// import sliderlogo5 from '../assets/sliderlogo5.png'
-// import sliderlogo6 from '../assets/sliderlogo6.png'
-// import sliderlogo7 from '../assets/sliderlogo7.png'
-// import sliderlogo8 from '../assets/sliderlogo8.png'
-// import sliderlogo9 from '../assets/sliderlogo9.png'
+import sliderlogo1 from '../assets/sliderlogo1.png'
+import sliderlogo2 from '../assets/sliderlogo2.png'
+import sliderlogo3 from '../assets/sliderlogo3.png'
+import sliderlogo4 from '../assets/sliderlogo4.png'
+import sliderlogo5 from '../assets/sliderlogo5.png'
+import sliderlogo6 from '../assets/sliderlogo6.png'
+import sliderlogo7 from '../assets/sliderlogo7.png'
+import sliderlogo8 from '../assets/sliderlogo8.png'
+import sliderlogo9 from '../assets/sliderlogo9.png'
 
 
-const logos1 = [logo1, logo1, logo1];
-const logos2 = [logo1, logo1, logo1];
-const logos3 = [logo1, logo1, logo1];
+const logos1 = [sliderlogo1, sliderlogo2, sliderlogo3];
+const logos2 = [sliderlogo4, sliderlogo5, sliderlogo6];
+const logos3 = [sliderlogo7, sliderlogo8, sliderlogo9];
 
 export default function LogoMarquee() {
     return (

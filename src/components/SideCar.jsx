@@ -53,7 +53,7 @@ function SideCar() {
 
                     </div>
                     <div className='order-2    '  >
-                        <div className='absolute top-0 left-[30%]' >
+                        <div className='absolute top-0 left-[20%]' >
                             <LogoMarquee />
                         </div>
                     </div>

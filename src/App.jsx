@@ -1,25 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import IntroView from './components/IntroView'
-import Beleive from './components/Beleive'
-
-
-// change
+import ContactPage from "./components/ContactPage";
+import TotalApp from "./TotalApp"
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 
 
 function App() {
 
   return (
     <>
-      <div className='bg-[#0A0D14] h-auto min-h-full' >
-        <IntroView />
-        <Beleive />
+
+      <BrowserRouter>
 
 
+        <Routes>
+          <Route path="/" element={<TotalApp />} />
 
-      </div>
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </BrowserRouter>
+
+      {/* <TotalApp /> */}
+
     </>
   )
 }

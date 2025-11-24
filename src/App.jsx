@@ -13,7 +13,6 @@ function App() {
 
         <Routes>
           <Route path="/" element={<TotalApp />} />
-
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </BrowserRouter>

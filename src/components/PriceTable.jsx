@@ -24,7 +24,7 @@ function PriceTable() {
             price: "$0",
             billing: "per user/month",
             features: [
-                { label: "Participants", value: "10" },
+                { label: "Participants", value: "100" },
                 { label: "Meeting Duration", value: "30-min/per meet" },
                 { label: "Concurrent meeting", value: "1" },
                 { label: "Recordings", value: "7 days" },
@@ -35,30 +35,30 @@ function PriceTable() {
         },
         {
             title: "Pro",
-            price: "$10",
+            price: "$19",
             design: "change",
             billing: "per user/month",
             features: [
-                { label: "Participants", value: "30" },
-                { label: "Meeting Duration", value: "60-min/per meet" },
-                { label: "Concurrent meeting", value: "3" },
-                { label: "Recordings", value: "15 days" },
-                { label: "Storages", value: "20 GB" },
-                { label: "Support", value: "Priority" }
+                { label: "Participants", value: "250" },
+                { label: "Meeting Duration", value: "200-min/per meet" },
+                { label: "Concurrent meeting", value: "10" },
+                { label: "Recordings", value: "30 days" },
+                { label: "Storages", value: "100 GB" },
+                { label: "Support", value: "Premium(4hrs)" }
             ],
             button: "Purchase now"
         },
         {
             title: "Enterprise",
-            price: "$20",
+            price: "$39",
             billing: "per user/month",
             features: [
-                { label: "Participants", value: "50" },
-                { label: "Meeting Duration", value: "90-min/per meet" },
-                { label: "Concurrent meeting", value: "5" },
-                { label: "Recordings", value: "30 days" },
-                { label: "Storages", value: "50 GB" },
-                { label: "Support", value: "Premium" }
+                { label: "Participants", value: "500" },
+                { label: "Meeting Duration", value: "500-min/per meet" },
+                { label: "Concurrent meeting", value: "25" },
+                { label: "Recordings", value: "90 days" },
+                { label: "Storages", value: "500 GB" },
+                { label: "Support", value: "Premium(1hrs)" }
             ],
             button: "Purchase now"
         }
@@ -80,31 +80,31 @@ function PriceTable() {
             button: "Purchase now"
         },
         {
-            title: "Pro (Save 20%)",
-            price: "$96", // = $10 * 12 * 0.8
+            title: "Pro",
+            price: "$228",
             design: "change",
             billing: "per user/year",
             features: [
-                { label: "Participants", value: "300" },
-                { label: "Meeting Duration", value: "60-min/per meet" },
-                { label: "Concurrent meeting", value: "3" },
-                { label: "Recordings", value: "15 days" },
-                { label: "Storages", value: "20 GB" },
-                { label: "Support", value: "Priority" }
+                { label: "Participants", value: "250" },
+                { label: "Meeting Duration", value: "200-min/per meet" },
+                { label: "Concurrent meeting", value: "10" },
+                { label: "Recordings", value: "30 days" },
+                { label: "Storages", value: "100 GB" },
+                { label: "Support", value: "Premium(4hrs)" }
             ],
             button: "Purchase now"
         },
         {
-            title: "Enterprise (Save 20%)",
-            price: "$192",
+            title: "Enterprise",
+            price: "$468",
             billing: "per user/year",
             features: [
                 { label: "Participants", value: "500" },
-                { label: "Meeting Duration", value: "90-min/per meet" },
-                { label: "Concurrent meeting", value: "5" },
-                { label: "Recordings", value: "30 days" },
-                { label: "Storages", value: "50 GB" },
-                { label: "Support", value: "Premium" }
+                { label: "Meeting Duration", value: "500-min/per meet" },
+                { label: "Concurrent meeting", value: "25" },
+                { label: "Recordings", value: "90 days" },
+                { label: "Storages", value: "500 GB" },
+                { label: "Support", value: "Premium(1hrs)" }
             ],
             button: "Purchase now"
         }

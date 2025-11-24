@@ -1,7 +1,7 @@
 
 
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import blurimage1 from "../assets/blurimage1.svg"
 import blurimage3 from "../assets/blurimage3.svg"
 import backgroundtabimage from "../assets/backgroundtabimage.svg"
@@ -14,12 +14,27 @@ function FourToggle() {
 
     const [active, setActive] = useState("Get started");
 
+
+
+    const tab1 = [fourimage1, fourimage4, fourimage2]
+    const tab2 = [fourimage2, fourimage1, fourimage4]
+    const tab3 = [fourimage4, fourimage2, fourimage1]
+    const tab4 = [fourimage1, fourimage4, fourimage2]
+
+    const [tabData, setTabData] = useState(tab1)
+
+
+
+
     const tabs = [
         "Get started",
         "Smart Scheduling",
         "Live Collaboration",
         "Host Controls",
     ];
+
+
+
 
 
 
@@ -84,11 +99,23 @@ function FourToggle() {
                                 {tabs.map((tab) => (
                                     <div
                                         key={tab}
-                                        onClick={() => setActive(tab)}
+                                        onClick={() => {
+                                            setActive(tab)
+
+                                            setTabData(
+                                                tab === "Get started" ? tab1 :
+                                                    tab === "Smart Scheduling" ? tab2 :
+                                                        tab === "Live Collaboration" ? tab3 :
+                                                            tab === "Host Controls" ? tab4 :
+                                                                tab1
+                                            );
+
+
+                                        }}
                                         className={`
           py-3 text-center cursor-pointer transition-all duration-300 rounded-xl
           ${active === tab
-                                                ? ""
+                                                ? "bg-gradient-to-r from-[#A76BFF] to-[#C89BFF]"
                                                 : "text-gray-300"}
         `}
                                     >
@@ -111,9 +138,18 @@ function FourToggle() {
                             <div
                                 key={active}
                                 className="grid grid-cols-2 md:grid-cols-3 pt-5 md:pt-10 px-5 md:px-20 gap-5 animate-fadeSlide">
-                                <img src={fourimage1} alt="" />
-                                <img src={fourimage2} alt="" />
-                                <img src={fourimage4} alt="" />
+
+                                {
+                                    tabData?.map((v, i) => {
+                                        return (
+
+                                            <img src={v} alt="" />
+
+
+                                        )
+
+                                    })
+                                }
                             </div>
                         </div>
                     </div>

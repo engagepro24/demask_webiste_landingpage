@@ -15,12 +15,7 @@ function Feedback() {
 
     const [active, setActive] = useState("Get started");
 
-    const tabs = [
-        "Get started",
-        "Smart Scheduling",
-        "Live Collaboration",
-        "Host Controls",
-    ];
+
 
 
 
@@ -53,7 +48,7 @@ function Feedback() {
 
                 </div>
 
-                <div className='flex justify-center ' >
+                <div className='flex justify-center pt-5 ' >
                     <div className='border border-[#BFA2F6]/50 p-2 bg-[#BFA2F6]/20 rounded-xl' >
                         <p class="bg-gradient-to-r from-[#A76BFF] to-[#C89BFF] bg-clip-text text-transparent 
        uppercase tracking-[0.3em] font-semibold 

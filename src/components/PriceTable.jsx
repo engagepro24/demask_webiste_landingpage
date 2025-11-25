@@ -25,7 +25,7 @@ function PriceTable() {
             billing: "per user/month",
             features: [
                 { label: "Participants", value: "100" },
-                { label: "Meeting Duration", value: "30-min/per meet" },
+                { label: "Meeting Duration", value: "30-min per meet" },
                 { label: "Concurrent meeting", value: "1" },
                 { label: "Recordings", value: "7 days" },
                 { label: "Storages", value: "5 GB" },
@@ -40,7 +40,7 @@ function PriceTable() {
             billing: "per user/month",
             features: [
                 { label: "Participants", value: "250" },
-                { label: "Meeting Duration", value: "200-min/per meet" },
+                { label: "Meeting Duration", value: "200-min per meet" },
                 { label: "Concurrent meeting", value: "10" },
                 { label: "Recordings", value: "30 days" },
                 { label: "Storages", value: "100 GB" },
@@ -54,7 +54,7 @@ function PriceTable() {
             billing: "per user/month",
             features: [
                 { label: "Participants", value: "500" },
-                { label: "Meeting Duration", value: "500-min/per meet" },
+                { label: "Meeting Duration", value: "500-min per meet" },
                 { label: "Concurrent meeting", value: "25" },
                 { label: "Recordings", value: "90 days" },
                 { label: "Storages", value: "500 GB" },
@@ -72,7 +72,7 @@ function PriceTable() {
             billing: "per user/year",
             features: [
                 { label: "Participants", value: "100" },
-                { label: "Meeting Duration", value: "30-min/per meet" },
+                { label: "Meeting Duration", value: "30-min per meet" },
                 { label: "Concurrent meeting", value: "1/m" },
                 { label: "Recordings", value: "7 days/m" },
                 { label: "Storages", value: "5 GB/m" },
@@ -88,7 +88,7 @@ function PriceTable() {
             billing: "per user/year",
             features: [
                 { label: "Participants", value: "250" },
-                { label: "Meeting Duration", value: "200-min/per meet" },
+                { label: "Meeting Duration", value: "200-min per meet" },
                 { label: "Concurrent meeting", value: "10/m" },
                 { label: "Recordings", value: "30 days/m" },
                 { label: "Storages", value: "100 GB" },
@@ -103,7 +103,7 @@ function PriceTable() {
             billing: "per user/year",
             features: [
                 { label: "Participants", value: "500" },
-                { label: "Meeting Duration", value: "500-min/per meet" },
+                { label: "Meeting Duration", value: "500-min per meet" },
                 { label: "Concurrent meeting", value: "25/m" },
                 { label: "Recordings", value: "90 days" },
                 { label: "Storages", value: "500 GB" },

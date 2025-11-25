@@ -13,6 +13,10 @@ import blurimage3 from "../assets/blurimage3.svg"
 import { useNavigate } from 'react-router-dom'
 function Decenter() {
 
+    const goToHomeSection = (id) => {
+        navigate("/", { state: { sectionId: id } });
+    };
+
 
     const navigate = useNavigate()
     return (
@@ -42,7 +46,7 @@ function Decenter() {
                             </div>
 
                             <div className='mt-6' >
-                                <div onClick={() => navigate("/contact")} className=' cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[120px] rounded-2xl text-center text-white' >
+                                <div onClick={() => goToHomeSection("pricing")} className=' cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[120px] rounded-2xl text-center text-white' >
                                     Get started
                                 </div>
                             </div>

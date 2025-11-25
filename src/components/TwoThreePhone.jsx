@@ -11,6 +11,12 @@ function TwoThreePhone() {
 
     const navigate = useNavigate()
 
+    const goToHomeSection = (id) => {
+        navigate("/", { state: { sectionId: id } });
+    };
+
+
+
     return (
         <div className='bg-[#0E121C] mt-4 md:mt-20 relative z-40'  >
             {/* <div className='bg-[#0E121C] mt-16 md:mt-20 relative'  > */}
@@ -70,7 +76,7 @@ function TwoThreePhone() {
                         </div>
 
                         <div className='mt-6' >
-                            <div onClick={() => navigate("/contact")} className=' cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[120px] rounded-2xl text-center text-white' >
+                            <div onClick={() => goToHomeSection("pricing")} className=' cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[120px] rounded-2xl text-center text-white' >
                                 Get started
                             </div>
                         </div>
@@ -143,7 +149,7 @@ function TwoThreePhone() {
                         </div>
 
                         <div className='mt-6' >
-                            <div onClick={() => navigate("/contact")} className=' cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[120px] rounded-2xl text-center text-white' >
+                            <div onClick={() => goToHomeSection("pricing")} className=' cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] py-3 w-[120px] rounded-2xl text-center text-white' >
                                 Get started
                             </div>
                         </div>

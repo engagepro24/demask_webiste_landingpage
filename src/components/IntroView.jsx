@@ -12,6 +12,11 @@ function IntroView() {
 
     const location = useLocation();
 
+    const goToHomeSection = (id) => {
+        navigate("/", { state: { sectionId: id } });
+    };
+
+
     useEffect(() => {
         if (location.state?.sectionId) {
             const section = document.getElementById(location.state.sectionId);
@@ -190,7 +195,7 @@ function IntroView() {
                         </div>
 
                         <div className='flex justify-center  w-screen mt-4' >
-                            <div onClick={() => navigate("/contact")} className='z-50 cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] p-2 w-[150px] rounded-md text-center text-white' >
+                            <div onClick={() => goToHomeSection("pricing")} className='z-50 cursor-pointer bg-[linear-gradient(90deg,#6D00FF_0%,#A35DFF_100%)] p-2 w-[150px] rounded-md text-center text-white' >
                                 Get started
                             </div>
                         </div>

@@ -12,8 +12,8 @@ function TwoThreePhone() {
     const navigate = useNavigate()
 
     return (
-        <div className='bg-[#0A0D14] mt-4 md:mt-20 relative z-40'  >
-            {/* <div className='bg-[#0A0D14] mt-16 md:mt-20 relative'  > */}
+        <div className='bg-[#0E121C] mt-4 md:mt-20 relative z-40'  >
+            {/* <div className='bg-[#0E121C] mt-16 md:mt-20 relative'  > */}
 
             <div className='border border-[#31353F] max-w-7xl mx-auto relative rounded-4xl overflow-hidden' >
 

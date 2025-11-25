@@ -8,7 +8,7 @@ function GlobalImpact() {
     const cardsData = [
         {
             id: 1,
-            bg: "bg-gradient-to-br from-[#0A0D14] to-[#31353F]",
+            bg: "bg-gradient-to-br from-[#0E121C] to-[#31353F]",
             value: "1.2M+",
             valueStyle:
                 "bg-gradient-to-r from-[#A76BFF] to-[#C89BFF] bg-clip-text text-transparent uppercase tracking-[0.1em] font-semibold drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] h2",
@@ -16,7 +16,7 @@ function GlobalImpact() {
         },
         {
             id: 2,
-            bg: "bg-gradient-to-br from-[#0A0D14] to-[#31353F]",
+            bg: "bg-gradient-to-br from-[#0E121C] to-[#31353F]",
             value: "8.4M+",
             valueStyle:
                 "bg-gradient-to-r from-[#A76BFF] to-[#C89BFF] bg-clip-text text-transparent uppercase tracking-[0.1em] font-semibold drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] h2",
@@ -24,7 +24,7 @@ function GlobalImpact() {
         },
         {
             id: 3,
-            bg: "bg-gradient-to-br from-[#0A0D14] to-[#31353F]",
+            bg: "bg-gradient-to-br from-[#0E121C] to-[#31353F]",
             value: "560K+",
             valueStyle:
                 "bg-gradient-to-r from-[#A76BFF] to-[#C89BFF] bg-clip-text text-transparent uppercase tracking-[0.1em] font-semibold drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] h2",
@@ -32,7 +32,7 @@ function GlobalImpact() {
         },
         {
             id: 4,
-            bg: "bg-gradient-to-br from-[#0A0D14] to-[#31353F]",
+            bg: "bg-gradient-to-br from-[#0E121C] to-[#31353F]",
             value: "3.7M+",
             valueStyle:
                 "bg-gradient-to-r from-[#A76BFF] to-[#C89BFF] bg-clip-text text-transparent uppercase tracking-[0.1em] font-semibold drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] h2",

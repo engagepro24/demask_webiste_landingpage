@@ -20,7 +20,7 @@ function Feedback() {
 
 
     return (
-        <div className='mt-10 w-[100%]  mx-auto bg-[linear-gradient(180deg,#31353F_0%,#0A0D14_112.34%)] p-5 rounded-xl' >
+        <div className='mt-10 w-[100%]  mx-auto bg-[linear-gradient(180deg,#31353F_0%,#0E121C_112.34%)] p-5 rounded-xl' >
 
             <div className='relative' >
 
@@ -65,7 +65,7 @@ function Feedback() {
                     </div>
                 </div>
                 <div className='flex justify-center  mt-6' >
-                    <div className='text-white h5  text-center w-[100%] md:w-[70%] lg:w-[50%]' >
+                    <div className='text-[#CDD0D5] h5  text-center w-[100%] md:w-[70%] lg:w-[50%]' >
                         Hear from our global community and discover how De-mask has elevated their virtual meeting and conference experiences.
                     </div>
                 </div>
@@ -73,10 +73,10 @@ function Feedback() {
                     <div className=' h-full' >
 
                         <TestmonialCar />
-                        <div className='h-full w-[1%] bg-[linear-gradient(180deg,#31353F_0%,#0A0D14_112.34%)] absolute top-0 left-0 ' >  </div>
-                        <div className='h-full w-[4%] bg-[linear-gradient(180deg,#31353F_0%,#0A0D14_112.34%)] absolute top-0 left-0 blur-lg' >  </div>
-                        <div className='h-full w-[1%] bg-[linear-gradient(180deg,#31353F_0%,#0A0D14_112.34%)] absolute top-0 right-0 ' >  </div>
-                        <div className='h-full w-[4%] bg-[linear-gradient(180deg,#31353F_0%,#0A0D14_112.34%)] absolute top-0 right-0 blur-lg' >  </div>
+                        <div className='h-full w-[1%] bg-[linear-gradient(180deg,#31353F_0%,#0E121C_112.34%)] absolute top-0 left-0 ' >  </div>
+                        <div className='h-full w-[4%] bg-[linear-gradient(180deg,#31353F_0%,#0E121C_112.34%)] absolute top-0 left-0 blur-lg' >  </div>
+                        <div className='h-full w-[1%] bg-[linear-gradient(180deg,#31353F_0%,#0E121C_112.34%)] absolute top-0 right-0 ' >  </div>
+                        <div className='h-full w-[4%] bg-[linear-gradient(180deg,#31353F_0%,#0E121C_112.34%)] absolute top-0 right-0 blur-lg' >  </div>
 
                     </div>
                 </div>

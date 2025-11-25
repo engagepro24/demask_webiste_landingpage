@@ -57,7 +57,7 @@ function SidePhone() {
                             </div>
                         </div>
                         * <div className='absolute bottom-0 left-0 z-40' >
-                            <img className="h-50 sm:h-60 md:h-80" src={phoneimagethree3} alt="" />
+                            <img className="h-50 sm:h-60 md:h-75" src={phoneimagethree3} alt="" />
                         </div>
 
                         <div className='absolute bottom-0 left-0 z-10' >

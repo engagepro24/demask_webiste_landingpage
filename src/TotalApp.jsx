@@ -30,7 +30,7 @@ function TotalApp() {
 
     return (
         <>
-            <div className='bg-[#0A0D14] h-auto min-h-full overflow-hidden' >
+            <div className='bg-[#0E121C] h-auto min-h-full overflow-hidden' >
                 {/* <Test /> */}
                 <div id="home">
                     <IntroView />

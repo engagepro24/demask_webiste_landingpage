@@ -133,7 +133,7 @@ function FourToggle() {
 
                 {/* IMAGES BELOW */}
                 <div className="mt-10 z-20">
-                    <div className="bg-[linear-gradient(109.88deg,#31353F_0%,#0A0D14_100%)] rounded-xl ">
+                    <div className="bg-[linear-gradient(109.88deg,#31353F_0%,#0E121C_100%)] rounded-xl ">
                         <div className="flex justify-center">
                             <div
                                 key={active}

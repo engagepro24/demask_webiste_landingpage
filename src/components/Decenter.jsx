@@ -16,7 +16,7 @@ function Decenter() {
 
     const navigate = useNavigate()
     return (
-        <div className='bg-[#0A0D14]  mt-16 md:mt-20 relative'  >
+        <div className='bg-[#0E121C]  mt-16 md:mt-20 relative'  >
 
             <div className=' max-w-7xl mx-auto relative' >
 
@@ -131,10 +131,10 @@ function Decenter() {
                                 </div>
                                 <div>
                                     <div className='h5 text-white' >
-                                        Role-Based Permissions
+                                        Automated Authorization
                                     </div>
                                     <div className='h5 text-white mt-2' >
-                                        Assign precise access levels to hosts, speakers, and participants for secure, organized events.
+                                        Simplify onboarding with automated approval and entry processes for seamless participation.
                                     </div>
                                 </div>
 

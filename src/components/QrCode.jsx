@@ -6,7 +6,7 @@ import playstore from "../assets/playstore.png";
 
 function QrCode({ pageData }) {
     return (
-        <div className={`${pageData ? "mt-0" : "mt-16 md:mt-20 "} bg-[#0A0D14]  px-5`}>
+        <div className={`${pageData ? "mt-0" : "mt-16 md:mt-20 "} bg-[#0E121C]  px-5`}>
             <div
                 className="
     max-w-7xl mx-auto rounded-3xl p-6 md:p-10 

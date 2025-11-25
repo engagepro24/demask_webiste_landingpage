@@ -56,10 +56,10 @@ function Faq() {
     };
 
     return (
-        <div className='bg-[#0A0D14] mt-16 md:mt-20 relative'  >
+        <div className='bg-[#0E121C] mt-16 md:mt-20 relative'  >
 
             {/* <div className='border border-[#31353F] ' > */}
-            <div class="bg-[linear-gradient(102.5deg,#31353F_0%,#0A0D14_100%)] p-6 max-w-7xl mx-auto relative rounded-3xl min-h-[250px]">
+            <div class="bg-[linear-gradient(102.5deg,#31353F_0%,#0E121C_100%)] p-6 max-w-7xl mx-auto relative rounded-3xl min-h-[250px]">
                 <div className="grid grid-cols-12  " >
                     <div className=" col-span-12 md:col-span-4 pt-5 md:pt-10 p-0 sm:p-10 relative z-20 " >
                         <div

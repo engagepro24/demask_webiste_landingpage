@@ -12,7 +12,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 function Contact({ pageData }) {
     return (
-        <div className={`${pageData ? "" : "bg-[#0A0D14]"}  text-white py-20 px-5 md:px-10 relative`}>
+        <div className={`${pageData ? "" : "bg-[#0E121C]"}  text-white py-20 px-5 md:px-10 relative`}>
 
             {/* ---- TOP SECTION ---- */}
             <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10">
@@ -20,7 +20,7 @@ function Contact({ pageData }) {
                 {/* LEFT TEXT */}
                 <div className="col-span-5" >
                     <div class=" 
-                         h1  bg-gradient-to-b from-[#0A0D14]  to-[#FFFFFF] leading-8 md:leading-12  bg-clip-text  tracking-[0.2em] text-transparent uppercase
+                         h1  bg-gradient-to-b from-[#0E121C]  to-[#FFFFFF] leading-8 md:leading-12  bg-clip-text  tracking-[0.2em] text-transparent uppercase
                         ">
                         Reach Out
                     </div>

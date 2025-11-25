@@ -37,7 +37,7 @@ function ContactPage() {
 
 
     return (
-        <div className='bg-[#0A0D14] h-auto min-h-full overflow-x-hidden' >
+        <div className='bg-[#0E121C] h-auto min-h-full overflow-x-hidden' >
 
             <div className='min-h-screen h-full'  >
                 <div className="w-full z-10 relative">

@@ -14,7 +14,7 @@ function PriceTable() {
 
     const tabs = [
         "Monthly",
-        "Annual 20%",
+        "Annual -20%",
     ];
 
 
@@ -68,6 +68,7 @@ function PriceTable() {
         {
             title: "Free",
             price: "$0",
+
             billing: "per user/year",
             features: [
                 { label: "Participants", value: "100" },
@@ -81,7 +82,8 @@ function PriceTable() {
         },
         {
             title: "Pro",
-            price: "$182",
+            price: "$228",
+            offer: "$182",
             design: "change",
             billing: "per user/year",
             features: [
@@ -97,6 +99,7 @@ function PriceTable() {
         {
             title: "Enterprise",
             price: "$374",
+            offer: "$228",
             billing: "per user/year",
             features: [
                 { label: "Participants", value: "500" },
@@ -171,7 +174,7 @@ function PriceTable() {
                     <div className="flex justify-center">
                         <div
                             key={active}
-                            className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 md:pt-10 w-full animate-fadeSlide"
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-5 md:pt-10 w-full animate-fadeSlide"
                         >
                             {(active === "Monthly" ? monthlyPlans : annualPlans).map((plan, index) => (
 
@@ -209,13 +212,54 @@ function PriceTable() {
 
                                                     {
                                                         !plan?.design ?
-                                                            <div className="text-3xl font-bold">{plan.price}</div>
+                                                            <div className="flex items-center gap-3 relative">
+                                                                {
+                                                                    !plan?.offer ?
+                                                                        <div className="text-xl font-bold   ">
+                                                                            {plan?.price}
+                                                                        </div>
+
+                                                                        : <div>
+                                                                            <div className="text-xl font-semibold line-through text-gray-400">
+                                                                                {plan?.price}
+                                                                            </div>
+                                                                            <div className="text-xl font-bold text-gray-400 absolute left-12 -top-2 ">
+                                                                                {plan?.offer}
+                                                                            </div>
+
+                                                                        </div>
+                                                                }
+
+                                                            </div>
+
                                                             :
-                                                            <p class="bg-gradient-to-tr from-[#C89BFF] to-[#A76BFF] bg-clip-text text-transparent 
-       uppercase  font-semibold 
-       drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] text-3xl ">
-                                                                {plan.price}
-                                                            </p>
+                                                            <div>
+                                                                {
+                                                                    !plan?.offer ?
+                                                                        <p class="bg-gradient-to-tr from-[#C89BFF] to-[#A76BFF] bg-clip-text text-transparent   uppercase  font-semibold drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] text-xl ">
+                                                                            {plan.price}
+                                                                        </p>
+
+                                                                        :
+                                                                        <div className="flex items-center gap-3 relative">
+                                                                            <div className="relative w-fit">
+                                                                                <div className=" text-xl uppercase font-semibold text-gray-400">
+                                                                                    {plan?.price}
+                                                                                </div>
+
+                                                                                {/* Strike line */}
+                                                                                <div className="absolute left-0 top-1/2 w-full h-[2px] bg-gray-400 "></div>
+                                                                            </div>
+
+                                                                            <div className="text-xl font-bold bg-gradient-to-tr from-[#C89BFF] to-[#A76BFF] bg-clip-text text-transparent absolute left-12 -top-2 ">
+                                                                                {plan?.offer}
+                                                                            </div>
+
+                                                                        </div>
+                                                                }
+
+                                                            </div>
+
 
                                                     }
 

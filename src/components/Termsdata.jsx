@@ -2,7 +2,7 @@ import React from "react";
 
 function Termsdata() {
     return (
-        <div className="w-full min-h-screen bg-[#0A0D14] text-white px-5 md:px-20 py-10 max-w-7xl mx-auto">
+        <div className="w-full min-h-screen bg-[#0E121C] text-white px-5 md:px-20 py-10 max-w-7xl mx-auto">
             <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
 
             <div className="space-y-6 leading-relaxed">

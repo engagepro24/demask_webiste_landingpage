@@ -14,8 +14,11 @@ import blurimage2 from "../assets/blurimage2.svg"
 
 import blurimage3 from "../assets/blurimage3.svg"
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { useNavigate } from 'react-router-dom'
 
 function Faq() {
+
+    const navigate = useNavigate()
 
 
     const faqData = [
@@ -93,7 +96,7 @@ function Faq() {
                                     kindly engage with our customer support.
 
                                 </div>
-                                <div class="duration-300hover:text-black mx-auto w-full cursor-pointer rounded-xl border border-white/30 bg-black py-2 text-center text-white transition-all">Get In Touch</div>
+                                <div onClick={() => navigate("/contact")} class="duration-300hover:text-black mx-auto w-full cursor-pointer rounded-xl border border-white/30 bg-black py-2 text-center text-white transition-all">Get In Touch</div>
 
 
                             </div>

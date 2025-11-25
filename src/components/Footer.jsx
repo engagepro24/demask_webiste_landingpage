@@ -4,6 +4,7 @@ import instaimage from "../assets/instaimage.png"
 import linkimage from "../assets/linkimage.png"
 import ximage from "../assets/ximage.png"
 import { useNavigate } from 'react-router-dom'
+import { HiLink } from "react-icons/hi";
 
 function Footer({ pageData }) {
 
@@ -37,6 +38,30 @@ function Footer({ pageData }) {
 
         }
     };
+
+    const iconurldata = [
+        {
+            name: "instagram",
+            icon: instaimage,
+            url: "https://instagram.com/yourprofile"
+        },
+        {
+            name: "website",
+            icon: linkimage,
+            url: "https://example.com"
+        },
+        {
+            name: "twitter",
+            icon: ximage,
+            url: "https://x.com/yourprofile"
+        },
+        {
+            name: "custom",
+            icon: "custom",
+            url: "https://tgpsglobal.com/"
+        }
+    ]
+
 
 
     return (
@@ -77,17 +102,59 @@ function Footer({ pageData }) {
 
                 {/* Social Icons */}
                 <div className="flex justify-center gap-3">
-                    {[instaimage, linkimage, ximage].map((icon, index) => (
-                        <div
-                            key={index}
-                            className="bg-[#121317] border border-gray-600 rounded-lg h-10 w-10 p-1.5 flex items-center justify-center"
-                        >
-                            <img src={icon} alt="" className="h-6 w-6" />
-                        </div>
-                    ))}
+                    {iconurldata.map((icon, index) => {
+
+                        console.log(icon, "think large")
+
+                        return (
+                            <div
+                                key={index}
+                                onClick={() => window.location.href = icon?.url}
+                                // onClick={() => window.open("https://example.com", "_blank")}
+
+
+                                className="bg-[#121317] border cursor-pointer border-gray-600 rounded-lg h-10 w-10 p-1.5 flex items-center justify-center"
+                            >
+                                {
+                                    icon?.icon == "custom" ?
+                                        <HiLink size={30} className='text-gray-200' />
+                                        : <img src={icon?.icon} alt="" className="h-6 w-6" />
+
+                                }
+
+                            </div>
+                        )
+                    }
+                    )}
                 </div>
 
+
+
             </div>
+
+            {/* <div className='w-screen' >
+                <div className='flex justify-around' >
+                    <div className='text-center' >
+                        <div className='h5' >Corporate Office</div>
+
+                        <p className='w-[70%] mx-auto text-center mt-4' >
+                         
+                            <div className=' my-2' >
+                                1st Floor, GV Tower, 371/1, G.V. Residency, Uppilipalayam, Coimbatore, Tamil Nadu 641028
+                            </div>
+                            <div>
+                                Ph: 0422 450 2296
+                            </div>
+                            <div>
+                            </div>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div> */}
+
 
             {/* LINE */}
             <div className="h-0.5 bg-[#262831] w-full my-6"></div>
@@ -96,8 +163,8 @@ function Footer({ pageData }) {
             <div className="flex flex-col md:flex-row justify-between items-center md:px-10 pb-8 gap-4">
 
                 <div className="flex gap-5 text-sm md:text-base text-gray-300">
-                    <span className="cursor-pointer">Privacy Policy</span>
-                    <span className="cursor-pointer">Terms and Conditions</span>
+                    <span onClick={() => navigate("/privacy")} className="cursor-pointer">Privacy Policy</span>
+                    <span onClick={() => navigate("/term")} className="cursor-pointer">Terms and Conditions</span>
                 </div>
 
                 <div className="text-gray-400 text-sm md:text-base">

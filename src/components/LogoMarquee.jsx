@@ -17,7 +17,7 @@ const logos3 = [sliderlogo7, sliderlogo8, sliderlogo9];
 
 export default function LogoMarquee() {
     return (
-        <article className="wrapper rotate-130">
+        <article className="wrapper rotate-100 md:rotate-130">
 
             {/* First marquee */}
             <div className="marquee">

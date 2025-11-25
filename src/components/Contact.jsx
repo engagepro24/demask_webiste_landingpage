@@ -138,7 +138,7 @@ function Contact({ pageData }) {
                     </div>
                     <div>
                         <p className="text-white text-sm">Call us</p>
-                        <p className=" text-gray-400 ">(123) 456-7890</p>
+                        <p className=" text-gray-400 ">0422 450 2296</p>
                     </div>
                 </div>
 
@@ -148,8 +148,10 @@ function Contact({ pageData }) {
                         <img className="h-7 w-7" src={locationicon} alt="" />
                     </div>
                     <div>
-                        <p className="text-gray-400 text-sm">Our location</p>
-                        <p className="text-white">Crosby Street, New York, US</p>
+                        <p className="text-sm">Our location</p>
+                        <p className=" text-gray-400 ">
+                            THAI GREEN POWER SOLUTIONS COMPANY LIMTED, 1st Floor, GV Tower, 371/1, G.V. Residency, Uppilipalayam, Coimbatore, Tamil Nadu 641028
+                        </p>
                     </div>
                 </div>
 

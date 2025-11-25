@@ -72,39 +72,39 @@ function PriceTable() {
             features: [
                 { label: "Participants", value: "100" },
                 { label: "Meeting Duration", value: "30-min/per meet" },
-                { label: "Concurrent meeting", value: "1" },
-                { label: "Recordings", value: "7 days" },
-                { label: "Storages", value: "5 GB" },
-                { label: "Support", value: "Basic (24hrs)" }
+                { label: "Concurrent meeting", value: "1/m" },
+                { label: "Recordings", value: "7 days/m" },
+                { label: "Storages", value: "5 GB/m" },
+                { label: "Support", value: "Basic (24hrs)/m" }
             ],
             button: "Purchase now"
         },
         {
             title: "Pro",
-            price: "$228",
+            price: "$182",
             design: "change",
             billing: "per user/year",
             features: [
                 { label: "Participants", value: "250" },
                 { label: "Meeting Duration", value: "200-min/per meet" },
-                { label: "Concurrent meeting", value: "10" },
-                { label: "Recordings", value: "30 days" },
+                { label: "Concurrent meeting", value: "10/m" },
+                { label: "Recordings", value: "30 days/m" },
                 { label: "Storages", value: "100 GB" },
-                { label: "Support", value: "Premium(4hrs)" }
+                { label: "Support", value: "Premium(4hrs)/m" }
             ],
             button: "Purchase now"
         },
         {
             title: "Enterprise",
-            price: "$468",
+            price: "$374",
             billing: "per user/year",
             features: [
                 { label: "Participants", value: "500" },
                 { label: "Meeting Duration", value: "500-min/per meet" },
-                { label: "Concurrent meeting", value: "25" },
+                { label: "Concurrent meeting", value: "25/m" },
                 { label: "Recordings", value: "90 days" },
                 { label: "Storages", value: "500 GB" },
-                { label: "Support", value: "Premium(1hrs)" }
+                { label: "Support", value: "Premium(1hrs)/m" }
             ],
             button: "Purchase now"
         }
@@ -185,7 +185,7 @@ function PriceTable() {
                                         <div className="flex flex-col">
 
                                             {/* TOP SECTION */}
-                                            <div className="bg-[linear-gradient(102.5deg,#31353F_0%,#0A0D14_100%)] rounded-2xl relative overflow-hidden">
+                                            <div className="bg-[linear-gradient(102.5deg,#31353F_0%,#0A0D14_100%)] text-[#CDD0D5] rounded-2xl relative overflow-hidden">
                                                 {
                                                     plan?.design &&
                                                     <img className='absolute bottom-0 right-0 z-10' src={backgroundpriceblur} alt="" />
@@ -225,7 +225,7 @@ function PriceTable() {
                                             </div>
 
                                             {/* MIDDLE FEATURES SECTION */}
-                                            <div className="mx-auto w-[80%] py-5 space-y-4">
+                                            <div className="mx-auto w-[80%] py-5 space-y-4 text-[#CDD0D5]">
                                                 {plan.features.map((f, i) => (
                                                     <div
                                                         key={i}

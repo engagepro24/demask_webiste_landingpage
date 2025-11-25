@@ -5,6 +5,8 @@ import phone3 from "../assets/phone3.png"
 import phone2 from "../assets/phone2.png"
 import phone1 from "../assets/phone1.png"
 import keyimage from "../assets/keyimage.png"
+import phoneimagethree from "../assets/phoneimagethree.png"
+import phoneimagethree3 from "../assets/phoneimagethree3.png"
 import keyimage2 from "../assets/keyimage2.png"
 import keyimage3 from "../assets/keyimage3.png"
 import backgroundkey1 from "../assets/backgroundkey1.svg"
@@ -40,11 +42,11 @@ function SidePhone() {
 
 
                 <div className='grid grid-cols-12 gap-5 mt-5' >
-                    <div className='col-span-12 relative md:col-span-8 h-10 bg-gradient-to-br overflow-hidden from-[#31353F] to-[#0A0D14] h-[250px] md:h-[400px]  rounded-2xl
+                    <div className='col-span-12 relative md:col-span-8 h-10 bg-gradient-to-br overflow-hidden from-[#31353F] to-[#0A0D14]  h-[300px]  sm:h-[400px] md:h-[500px] lg:h-[400px]   rounded-2xl
                   ' >
                         <div  >
                             <div className=' pt-8 px-6 ' >
-                                <div className='h4  text-white ' >
+                                <div className='h5  text-white ' >
                                     Robust Security
 
                                 </div>
@@ -54,16 +56,19 @@ function SidePhone() {
                                 </div>
                             </div>
                         </div>
+                        * <div className='absolute bottom-0 left-0 z-40' >
+                            <img className="h-50 sm:h-60 md:h-80" src={phoneimagethree3} alt="" />
+                        </div>
 
-                        <div className='absolute bottom-0 left-0' >
+                        <div className='absolute bottom-0 left-0 z-10' >
                             <img className="h-30 md:h-80" src={backgroundkey1} alt="" />
                         </div>
-                        <div className='absolute bottom-0 right-0' >
+                        <div className='absolute bottom-0 right-0 z-10'  >
                             <img className="h-30 md:h-80" src={backgroundkey2} alt="" />
                         </div>
 
 
-                        <div className="absolute bottom-0 left-[30%] z-30">
+                        {/* <div className="absolute bottom-0 left-[30%] z-30">
                             <img className="h-30 md:h-70" src={keyimage} alt="" />
                         </div>
 
@@ -73,10 +78,10 @@ function SidePhone() {
 
                         <div className="absolute bottom-0 right-[0%] z-40">
                             <img className="h-30 md:h-70" src={keyimage3} alt="" />
-                        </div>
+                        </div> */}
 
                     </div>
-                    <div className='col-span-12 md:col-span-4 h-10 h-[400px]   ' >
+                    <div className='col-span-12 md:col-span-4 h-10 h-[400px] md:h-[500px] lg:h-[400px]   ' >
                         <div className=' h-full flex flex-col gap-5 ' >
                             <div className='h-[60%]  bg-gradient-to-br from-[#31353F] to-[#0A0D14] rounded-2xl' >
                                 <div className='h5 h-full flex flex-col justify-end p-8' >
@@ -92,8 +97,8 @@ function SidePhone() {
                             <div class="h-[40%] bg-[linear-gradient(to_bottom,#a979e9,#a979e9,#a979e9,#a979e9,#a979e9,#ac7eea,#b084ea,#b389eb,#ba95ec,#c1a0ed,#c8acee,#cfb7ef)] rounded-2xl">
 
                                 <div className='h5 h-full flex flex-col justify-center p-8' >
-                                    <div className='h4  text-white' >User-Friendly Interface</div>
-                                    <div className='text-white h5 mt-2 ' >
+                                    <div className='h5  text-white' >User-Friendly Interface</div>
+                                    <div className='text-white h5 mt-2 md:mt-1 lg:mt-2 ' >
                                         A clean, intuitive design that makes hosting and joining meetings effortless.
                                     </div>
 
@@ -103,10 +108,10 @@ function SidePhone() {
 
                     </div>
 
-                    <div className='col-span-12 md:col-span-4 h-10  bg-gradient-to-br from-[#31353F] to-[#0A0D14] rounded-2xl h-[400px]' >
-                        <div className='h-[400px] relative '>
+                    <div className=' h-[400px] sm:h-[550px] md:h-[500px] col-span-12 md:col-span-4 h-10  bg-gradient-to-br from-[#31353F] to-[#0A0D14] rounded-2xl ' >
+                        <div className=' h-[400px] sm:h-[550px] md:h-[500px] relative '>
                             <div className='absolute bottom-0' >
-                                <img src={worldImage} alt="" />
+                                <img className='w-full' src={worldImage} alt="" />
                             </div>
                             <div className=' pt-8 px-6 ' >
                                 <div className='h4  text-white ' >
@@ -120,7 +125,7 @@ function SidePhone() {
                             </div>
                         </div>
                     </div>
-                    <div className='col-span-12 relative md:col-span-8 h-10 bg-gradient-to-br from-[#31353F] to-[#0A0D14] h-[450px]  rounded-2xl ' >
+                    <div className='col-span-12 relative md:col-span-8 h-10 bg-gradient-to-br from-[#31353F] to-[#0A0D14] h-[500px]  rounded-2xl ' >
                         <div  >
                             <div className=' pt-8 px-6 ' >
                                 <div className='h4  text-white ' >

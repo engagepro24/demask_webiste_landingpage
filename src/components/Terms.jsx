@@ -1,6 +1,8 @@
 
 
 
+
+
 import React, { useState } from 'react'
 import DemaskLogo from "../assets/DemaskLogo.png"
 import HeroImage from "../assets/HeroImage.png"
@@ -14,6 +16,7 @@ import Elevate from './Elevate'
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom'
 import Termsdata from './Termsdata'
+import Privacypolicy from './Privacydata'
 
 function Terms() {
 
@@ -41,7 +44,7 @@ function Terms() {
 
 
     return (
-        <div className='bg-[#0E121C] h-auto min-h-full overflow-x-hidden ' >
+        <div className='bg-[#0A0D14] h-auto min-h-full overflow-x-hidden ' >
 
             <div className='min-h-screen h-full'  >
                 <div className="w-full z-10 relative">
@@ -206,4 +209,15 @@ function Terms() {
 }
 
 export default Terms
+
+
+// import React from 'react'
+
+// function Privacy() {
+//   return (
+//     <div>Privacy</div>
+//   )
+// }
+
+// export default Privacy
 

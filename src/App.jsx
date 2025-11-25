@@ -16,8 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<TotalApp />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/privacy" element={<Terms />} />
-          <Route path="/term" element={<Privacy />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/term" element={<Terms />} />
         </Routes>
       </BrowserRouter>
 

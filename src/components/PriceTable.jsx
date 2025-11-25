@@ -27,7 +27,7 @@ function PriceTable() {
                 { label: "Participants", value: "100" },
                 { label: "Meeting Duration", value: "30-min per meet" },
                 { label: "Concurrent meeting", value: "1" },
-                { label: "Recordings", value: "7 days" },
+                { label: "Recording Backup upto", value: "7 days" },
                 { label: "Storages", value: "5 GB" },
                 { label: "Support", value: "Basic (24hrs)" }
             ],
@@ -42,7 +42,7 @@ function PriceTable() {
                 { label: "Participants", value: "250" },
                 { label: "Meeting Duration", value: "200-min per meet" },
                 { label: "Concurrent meeting", value: "10" },
-                { label: "Recordings", value: "30 days" },
+                { label: "Recording Backup upto", value: "30 days" },
                 { label: "Storages", value: "100 GB" },
                 { label: "Support", value: "Premium(4hrs)" }
             ],
@@ -56,7 +56,7 @@ function PriceTable() {
                 { label: "Participants", value: "500" },
                 { label: "Meeting Duration", value: "500-min per meet" },
                 { label: "Concurrent meeting", value: "25" },
-                { label: "Recordings", value: "90 days" },
+                { label: "Recording Backup upto", value: "90 days" },
                 { label: "Storages", value: "500 GB" },
                 { label: "Support", value: "Premium(1hrs)" }
             ],
@@ -74,7 +74,7 @@ function PriceTable() {
                 { label: "Participants", value: "100" },
                 { label: "Meeting Duration", value: "30-min per meet" },
                 { label: "Concurrent meeting", value: "1/m" },
-                { label: "Recordings", value: "7 days/m" },
+                { label: "Recording Backup upto", value: "7 days/m" },
                 { label: "Storages", value: "5 GB/m" },
                 { label: "Support", value: "Basic (24hrs)/m" }
             ],
@@ -90,7 +90,7 @@ function PriceTable() {
                 { label: "Participants", value: "250" },
                 { label: "Meeting Duration", value: "200-min per meet" },
                 { label: "Concurrent meeting", value: "10/m" },
-                { label: "Recordings", value: "30 days/m" },
+                { label: "Recording Backup upto", value: "30 days" },
                 { label: "Storages", value: "100 GB" },
                 { label: "Support", value: "Premium(4hrs)/m" }
             ],
@@ -105,7 +105,7 @@ function PriceTable() {
                 { label: "Participants", value: "500" },
                 { label: "Meeting Duration", value: "500-min per meet" },
                 { label: "Concurrent meeting", value: "25/m" },
-                { label: "Recordings", value: "90 days" },
+                { label: "Recording Backup upto", value: "90 days" },
                 { label: "Storages", value: "500 GB" },
                 { label: "Support", value: "Premium(1hrs)/m" }
             ],
@@ -219,11 +219,15 @@ function PriceTable() {
                                                                             {plan?.price}
                                                                         </div>
 
-                                                                        : <div>
-                                                                            <div className="text-xl font-semibold line-through text-gray-400">
+                                                                        : <div className='flex  gap-2' >
+
+                                                                            {/* <div className="text-sm font-bold text-gray-400 absolute left-12 -top-2 ">
+                                                                                offer
+                                                                            </div> */}
+                                                                            <div className="text-xl font-semibold line-through text-gray-500">
                                                                                 {plan?.price}
                                                                             </div>
-                                                                            <div className="text-xl font-bold text-gray-400 absolute left-12 -top-2 ">
+                                                                            <div className="text-xl font-bold text-gray-400 ">
                                                                                 {plan?.offer}
                                                                             </div>
 
@@ -251,7 +255,7 @@ function PriceTable() {
                                                                                 <div className="absolute left-0 top-1/2 w-full h-[2px] bg-gray-400 "></div>
                                                                             </div>
 
-                                                                            <div className="text-xl font-bold bg-gradient-to-tr from-[#C89BFF] to-[#A76BFF] bg-clip-text text-transparent absolute left-12 -top-2 ">
+                                                                            <div className="text-xl font-bold bg-gradient-to-tr from-[#C89BFF] to-[#A76BFF] bg-clip-text text-transparent">
                                                                                 {plan?.offer}
                                                                             </div>
 

@@ -48,7 +48,8 @@ function GlobalImpact() {
                     <p class="bg-gradient-to-r from-[#A76BFF] to-[#C89BFF] bg-clip-text text-transparent 
        uppercase tracking-[0.3em] font-semibold 
        drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] text-[10px] md:text-[12px] lg:text-sm  ">
-                        Numbers
+                        Global Performance Metrics
+
                     </p>
                 </div>
 

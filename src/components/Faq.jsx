@@ -23,31 +23,31 @@ function Faq() {
 
     const faqData = [
         {
-            question: "What is a De-mask?",
-            answer:
-                "Demask is cutting-edge software designed for hosting large-scale meetings globally with advanced video conferencing features."
+            question: "What is De-mask?",
+            answer: "De-mask is a decentralized, mobile-first virtual meeting application designed for secure communication and flexible collaboration. and team collaboration. It offers high-quality audio/video, scheduling tools, and interactive meeting features—all optimized for smartphones."
         },
         {
-            question: "How do I set up a large-scale meeting on De-mask?",
+            question: "How does De-mask ensure a smooth meeting experience on mobile?",
             answer:
-                "You can create scheduled or instant meetings with a single click and manage participants easily."
+                "De-mask uses adaptive streaming and lightweight processing so meetings run smoothly."
         },
         {
-            question: "Is De-mask optimized for mobile and tablets?",
+            question: "Can I use De-mask for daily team communication?",
             answer:
-                "Yes, it works seamlessly across all devices including mobile, tablets, and desktops."
+                "Yes. De-mask supports quick meetings, chat-based updates, and instant scheduling, making it suitable for daily team coordination and internal discussions."
         },
         {
-            question: "What features make De-mask ideal for global conferences?",
+            question: "What interactive features does De-mask offer during meetings?",
             answer:
-                "De-mask offers scalability, HD video, screen sharing, real-time chat, polls, and advanced moderation tools."
+                "De-mask includes screen sharing, hand-raise options, participant chat, session recording, and moderator controls—allowing both small teams and large groups to stay engaged."
         },
         {
-            question: "Why choose De-mask for virtual events?",
+            question: "How does De-mask handle user privacy and data security?",
             answer:
-                "It provides reliability, security, high-quality audio/video, and a user-friendly experience for all participants."
+                "The app uses encrypted communication, secure authentication, and protected data storage to keep meeting information safe. Personal details and recordings are stored securely and can only be accessed by authorized users."
         }
     ];
+
 
     const [openIndex, setOpenIndex] = React.useState(null);
 
